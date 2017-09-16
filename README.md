@@ -5,10 +5,10 @@ EYEI ensures the use will take breaks in between their computer sessions. After 
 also put the computer to sleep so they user will complied with EYEi.
 
 ## Built With
-* [Arduino] (https://www.arduino.cc/)
-* [SFEMP3Shield library] (https://github.com/madsci1016/Sparkfun-MP3-Player-Shield-Arduino-Library/tree/master/SFEMP3Shield)
+* [Arduino](https://www.arduino.cc/)
+* [SFEMP3Shield library](https://github.com/madsci1016/Sparkfun-MP3-Player-Shield-Arduino-Library/tree/master/SFEMP3Shield)
 
 ### Hardware
-* [SparkFun Redboard] (https://www.sparkfun.com/products/13975)
-* [Vs1053 mp3 shield] (https://www.elecrow.com/wiki/index.php?title=VS1053_MP3_Shield)
-* [RGB LED module] (https://www.jaycar.com.au/arduino-compatible-rgb-led-module/p/XC4428)
+* [SparkFunRedboard](https://www.sparkfun.com/products/13975)
+* [Vs1053 mp3 shield](https://www.elecrow.com/wiki/index.php?title=VS1053_MP3_Shield)
+* [RGB LED module](https://www.jaycar.com.au/arduino-compatible-rgb-led-module/p/XC4428)
