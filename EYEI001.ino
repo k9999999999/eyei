@@ -9,7 +9,9 @@ int redPin = 12;
 int greenPin = 5;
 int bluePin = 3;
 int btnPin = 0;
-int val = 0;
+
+int buttonState = 0;
+int flag=0;
 
 void setup() {
 
@@ -31,11 +33,15 @@ void setup() {
 
 //do something else now
 void loop() {
-  val = digitalRead(btnPin);
-  if(val == HIGH){
-      setColor(255, 0,0);
-  }else{
-      setColor(0,0,255);
+  buttonState = digitalRead(btnPin);
+  if(buttonState == LOW){
+    if(flag == 0){
+        setColor(255, 0, 0);
+        flag = 1;
+    }else if(flag ==1){
+        setColor(0, 255, 0);
+        flag=0;
+    }
   }
 }
 
