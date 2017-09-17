@@ -8,11 +8,13 @@ SFEMP3Shield MP3player;
 int redPin = 12;
 int greenPin = 5;
 int bluePin = 3;
+int btnPin = 0;
+int val = 0;
 
 void setup() {
 
   Serial.begin(9600);
-
+  pinMode(btnPin, INPUT);
   //start the shield
   sd.begin(SD_SEL, SPI_HALF_SPEED);
   MP3player.begin();
@@ -29,15 +31,12 @@ void setup() {
 
 //do something else now
 void loop() {
-  setColor(255,0,0);
-  Serial.println("red");
-  delay(2000);
-  setColor(0,255,0);
-  Serial.println("green");
-  delay(2000);
-  setColor(0,0,255);
-  Serial.println("blue");
-  delay(2000);
+  val = digitalRead(btnPin);
+  if(val == HIGH){
+      setColor(255, 0,0);
+  }else{
+      setColor(0,0,255);
+  }
 }
 
 void setColor(int red, int green, int blue){
