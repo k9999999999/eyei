@@ -27,7 +27,7 @@ void setup() {
   pinMode(bluePin, OUTPUT);
 
   //start playing track 1
-  MP3player.playTrack(2);
+  
   
 }
 
@@ -36,11 +36,9 @@ void loop() {
   buttonState = digitalRead(btnPin);
   if(buttonState == LOW){
     if(flag == 0){
-        setColor(255, 0, 0);
-        flag = 1;
+        
     }else if(flag ==1){
-        setColor(0, 255, 0);
-        flag=0;
+        MP3player.playTrack(2);
     }
   }
 }
