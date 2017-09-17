@@ -44,8 +44,8 @@ void setColor(int red, int green, int blue){
   green = 255 - green;
   blue = 255 - blue;
 
-  analogWrite(redPin, red);
-  analogWrite(greenPin, green);
-  analogWrite(bluePin, blue);
+  digitalWrite(redPin, red);
+  digitalWrite(greenPin, green);
+  digitalWrite(bluePin, blue);
 }
 
