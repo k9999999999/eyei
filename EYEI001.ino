@@ -27,20 +27,21 @@ void setup() {
   pinMode(bluePin, OUTPUT);
 
   //start playing track 1
-  
+  MP3player.playTrack(2);
   
 }
 
 //do something else now
 void loop() {
-  buttonState = digitalRead(btnPin);
-  if(buttonState == LOW){
-    if(flag == 0){
-        
-    }else if(flag ==1){
-        MP3player.playTrack(2);
-    }
-  }
+  if (MP3player.isPlaying() && digitalRead(btnPin)){
+    //if playing, then a press of the button stops the music
+    MP3player.stopTrack();
+    //Serial.println("music stopped");
+    delay(500); //to release button         
+  }else if(!MP3player.isPlaying() && digitalRead(btnPin)){  
+      MP3player.playTrack(2);
+     delay(500); //to release button 
+  }     
 }
 
 void setColor(int red, int green, int blue){
