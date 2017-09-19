@@ -6,7 +6,11 @@ also put the computer to sleep so they user will complied with EYEi.
 
 ## Built With
 * [Arduino](https://www.arduino.cc/)
+
+### Libraries used
+Install these libraries to compile code.
 * [SFEMP3Shield library](https://github.com/madsci1016/Sparkfun-MP3-Player-Shield-Arduino-Library/tree/master/SFEMP3Shield)
+* [SdFat.h](https://github.com/greiman/SdFat)
 
 ### Hardware
 * [SparkFunRedboard](https://www.sparkfun.com/products/13975)
